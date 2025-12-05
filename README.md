@@ -39,22 +39,33 @@
             movies.csv
             movie_votes.csv
 </pre>            
-Onde:
-**lib**: Contém as bibiotecas necessárias para executar o exemplo (e.g. JDBC de SQL)
-**sql**: scritps de SQL para criar o ambiente de testes
-    - **DDL.sql**: Scripts para criar a estrutura de dados necessária à importação de dados
-            scripts para importação de dados
-            NOTA: 
-            os scripts são executados em linha de comandos (Windows-> PowerShell; MacOS-> Terminal; Linux: Cli/Bash), não em SQL.
-            Mais informações abaixo
+Onde:<br>
+**lib**: Contém as bibiotecas necessárias para executar o exemplo (e.g. JDBC de SQL)<br>
+        Dependendo do IDE utilziado, pode ser necessário registar as bibliotecas
+**sql**: scritps de SQL para criar o ambiente de testes<br>
+    - **DDL.sql**: Scripts para criar a estrutura de dados necessária à importação de dados<br>
+            scripts para importação de dados<br>
+            NOTA: <br>
+            os scripts são executados em linha de comandos (Windows-> PowerShell; MacOS-> Terminal; Linux: Cli/Bash), não em SQL.<br>
+            Mais informações abaixo<br>
     - **deisIMDB.sql**: Scripts para criar os objectos especificos chamados pelo código de exemplo      
-            disponibilizado
-**src\pt\ulusofona\aed\deisimdb**: código fonte da solução
-**test-files**: ficheiros com dados de trabalho
+            disponibilizado<br>
+**src\pt\ulusofona\aed\deisimdb**: código fonte da solução<br>
+**test-files**: ficheiros com dados de trabalho<br>
 
 # Preparação do ambiente
 A organização de ficheiros segue uma estrutura de projecto trabalhado em VSCode, mas pode ser utilizado em qualquer IDE de JAVA desde que se apliquem todas as regras adequadas ao contexto de trabalho (e.g. configuração de debug e compilação, etc.)
 O exemplo está preparado para executar sobre uma base de dados criada de raiz - deisIMDB - no servidor utilizado nas aulas práticas. A dase de dados é criada em DDL.sql, conforme se indica abaixo
+
+Para executar o código Java no VSCode, será necessário instalar as seguintes:
+- Extension Pack for Java, da Microsoft (instala 6 extensões)
+    ![Microsoft Java Extension Pack](image.png)
+- Language Support for Java (tm), Red Hat    
+    ![Red Hat Language Support for Java](image-1.png)
+Opcionalmente, também se pode instalar os módulos
+- Java, Oracle Corporation
+    ![Java, Oracle](image-2.png)
+  Não é necessário para executar o código mas melhora o intelissense
 
 Para preparar o ambiente, executar as seguites acções:
 1.  Criar um novo projecto de JAVA em VSCode
