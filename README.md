@@ -1,4 +1,5 @@
 # File Tree
+<pre>
 │   README.md
 │
 ├───lib
@@ -37,6 +38,7 @@
             genres_movies.csv
             movies.csv
             movie_votes.csv
+</pre>
 Onde:
 lib: Contém as bibiotecas necessárias para executar o exemplo (e.g. JDBC de SQL)
 sql: scritps de SQL para criar o ambiente de testes
