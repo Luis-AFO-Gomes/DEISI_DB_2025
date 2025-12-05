@@ -1,0 +1,37 @@
+actorId,actorName,actorGender,movieId
+1,John Travolta,M,680
+2,Samuel L. Jackson,M,680
+3,Uma Thurman,F,680
+4,Tim Robbins,M,278
+5,Morgan Freeman,M,278
+6,Leonardo DiCaprio,M,27205
+7,Elliot Page,M,27205
+8,Joseph Gordon-Levitt,M,27205
+9,Tom Hanks,M,13
+10,Robin Wright,F,13
+11,Sigourney Weaver,F,348
+12,Tom Skerritt,M,348
+13,Christian Bale,M,155
+14,Heath Ledger,M,155
+15,Maggie Gyllenhaal,F,155
+9,Tom Hanks,M,8358
+17,Helen Hunt,F,8358
+18,Brad Pitt,M,807
+5,Morgan Freeman,M,807
+20,Gwyneth Paltrow,F,807
+21,Kevin Spacey,M,807
+6,Leonardo DiCaprio,M,11324
+13,Christian Bale,M,157336
+100,A1,M,123445678
+101,A2,F,123445678
+102,A3,M,123445678
+103,A4,M,123445678
+104,A5,M,123445678
+105,A6,M,123445678
+106,A7,M,123445678
+107,A8,M,123445678
+108,A9,M,123445678
+109,A10,M,123445678
+110,A11,M,123445678
+111,A12,M,123445678
+112,A13,M,123445678
