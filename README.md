@@ -1,4 +1,5 @@
 # File Tree
+<pre>
 │   README.md
 │
 ├───lib
@@ -37,16 +38,16 @@
             genres_movies.csv
             movies.csv
             movie_votes.csv
-Onde: <br>
-lib: Contém as bibiotecas necessárias para executar o exemplo (e.g. JDBC de SQL) <br>
-sql: scritps de SQL para criar o ambiente de testes <br>
-    - DDL.sql: Scripts para criar a estrutura de dados necessária à importação de dados <br>
-            scripts para importação de dados <br>
-            NOTA:  <br>
-            os scripts são executados em linha de comandos (Windows-> PowerShell; MacOS-> Terminal; Linux: Cli/Bash), não em SQL. <br>
-            Mais informações abaixo <br>
-    - deisIMDB.sql: Scripts para criar os objectos especificos chamados pelo código de exemplo  
-            disponibilizado <br>
+Onde:
+lib: Contém as bibiotecas necessárias para executar o exemplo (e.g. JDBC de SQL)
+sql: scritps de SQL para criar o ambiente de testes
+    - DDL.sql: Scripts para criar a estrutura de dados necessária à importação de dados
+            scripts para importação de dados
+            NOTA: 
+            os scripts são executados em linha de comandos (Windows-> PowerShell; MacOS-> Terminal; Linux: Cli/Bash), não em SQL.
+            Mais informações abaixo
+    - deisIMDB.sql: Scripts para criar os objectos especificos chamados pelo código de exemplo      
+            disponibilizado
 src\pt\ulusofona\aed\deisimdb: código fonte da solução
 test-files: ficheiros com dados de trabalho
 
