@@ -38,22 +38,23 @@
             genres_movies.csv
             movies.csv
             movie_votes.csv
+</pre>            
 Onde:
-lib: Contém as bibiotecas necessárias para executar o exemplo (e.g. JDBC de SQL)
-sql: scritps de SQL para criar o ambiente de testes
-    - DDL.sql: Scripts para criar a estrutura de dados necessária à importação de dados
+**lib**: Contém as bibiotecas necessárias para executar o exemplo (e.g. JDBC de SQL)
+**sql**: scritps de SQL para criar o ambiente de testes
+    - **DDL.sql**: Scripts para criar a estrutura de dados necessária à importação de dados
             scripts para importação de dados
             NOTA: 
             os scripts são executados em linha de comandos (Windows-> PowerShell; MacOS-> Terminal; Linux: Cli/Bash), não em SQL.
             Mais informações abaixo
-    - deisIMDB.sql: Scripts para criar os objectos especificos chamados pelo código de exemplo      
+    - **deisIMDB.sql**: Scripts para criar os objectos especificos chamados pelo código de exemplo      
             disponibilizado
-src\pt\ulusofona\aed\deisimdb: código fonte da solução
-test-files: ficheiros com dados de trabalho
+**src\pt\ulusofona\aed\deisimdb**: código fonte da solução
+**test-files**: ficheiros com dados de trabalho
 
 # Preparação do ambiente
 A organização de ficheiros segue uma estrutura de projecto trabalhado em VSCode, mas pode ser utilizado em qualquer IDE de JAVA desde que se apliquem todas as regras adequadas ao contexto de trabalho (e.g. configuração de debug e compilação, etc.)
-O exemplo está preparado para executar sobre uma base de dados criada de raiz - deisIMDB - no servidor utilizado nas aulas práticas. A dase de dados é criada em DDL.sql
+O exemplo está preparado para executar sobre uma base de dados criada de raiz - deisIMDB - no servidor utilizado nas aulas práticas. A dase de dados é criada em DDL.sql, conforme se indica abaixo
 
 Para preparar o ambiente, executar as seguites acções:
 1.  Criar um novo projecto de JAVA em VSCode
@@ -69,22 +70,22 @@ Para preparar o ambiente, executar as seguites acções:
 
 # Código fonte
 Ficheiros
-- Actor.java <br>
+- **Actor.java** <br>
   Classe de definição de actor
   Contém atributos de actor e métodos de exemplificação de ligação a base de dados (CRUD)
   No âmbito do exemplo, os atributos mapeiam directamente os dados obtidos da importação dos ficheiros CSV, acrescendo-se apenas um atributo de estado necessário para implementação do comportamento de "undelete" (desactivar registos em vez de os eliminar)
   Explicação em detalhe mais abaixo
-- Dao.java <br>
+- **Dao.java** <br>
   Classe com especificações para ligar a base de dados
   Para simplificação do código e segurança, utiliza-se esta classe para centralizar o código próprio para ligaçao a base de dados, facilitando a leitura e compreenção do processo.
   A cada método que acede à base de dados, é instanciando um objecto desta classe, evitando a repetição de código e riscos de erros sintáticos
-- Main.java <br>
+- **Main.java** <br>
   Classe principal de aplicações estáticas de Java
   Faz a interface de utilizador e executa as funções de calculo 
-Result.java <br>
-- Classe para apresentação de resultados de cada funcionalidade da aplicação
-TipoEntidade.java <br>
-- Enumerado com as classes utilizaveis na aplicação
+- **Result.java** <br>
+  Classe para apresentação de resultados de cada funcionalidade da aplicação
+- **TipoEntidade.java** <br>
+  Enumerado com as classes utilizaveis na aplicação
 
 # Classe de exemplo: Actor
 A classe utiliza dois construtores
