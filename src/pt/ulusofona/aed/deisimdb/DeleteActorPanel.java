@@ -91,7 +91,7 @@ public class DeleteActorPanel extends JPanel {
         cbActor.removeAllItems();
         currentActor = null;
 
-        String sql = "SELECT actorID, actorName FROM dbo.actors ORDER BY actorID";
+        String sql = "SELECT actorID,actorName FROM dbo.tf_getActiveActors() ORDER BY actorID DESC;";
 
         try (Connection conn = dao.getConnection();
              Statement st = conn.createStatement();
@@ -139,7 +139,7 @@ public class DeleteActorPanel extends JPanel {
             return;
         }
 
-        // Usa o teu construtor Actor(int actorId) que lê da BD
+        // Usa o construtor Actor(int actorId) que lê da BD
         currentActor = new Actor(item.id());
 
         nameLabel.setText(currentActor.getName());
